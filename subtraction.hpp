@@ -1,5 +1,5 @@
 namespace operations {
 
-int add(int, int);
+int subtract(int, int);
 
 } // namespace operations closing brace

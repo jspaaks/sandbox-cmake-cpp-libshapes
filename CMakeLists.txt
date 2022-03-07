@@ -1,3 +1,4 @@
-project(calculator)
+cmake_minimum_required (VERSION 3.10)
+project (calculator)
 
-add_executable(calculator calculator.cpp)
+add_executable (calculator calculator.cpp addition.cpp subtraction.cpp)
