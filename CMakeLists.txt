@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.10)
 project (calculator LANGUAGES CXX)
 add_subdirectory (external/operations/)
-# add_executable (calculator calculator.cpp)
-# target_link_libraries (calculator LINK_PUBLIC operations)
+add_executable (calculator calculator.cpp)
+target_link_libraries (calculator PUBLIC operations)

@@ -5,6 +5,7 @@ project(
     LANGUAGES CXX
 )
 
+# Not specifying library type SHARED|STATIC is deliberate
 add_library (
     operations
     src/addition.cpp
@@ -17,8 +18,8 @@ set_target_properties(
     VERSION 0.1.0
 )
 
-target_include_directories (
-    operations
-    PUBLIC
-    ${CMAKE_CURRENT_SOURCE_DIR}/include/
-)
+# target_include_directories (
+#     operations
+#     PRIVATE
+#     ${CMAKE_CURRENT_SOURCE_DIR}/include/
+# )

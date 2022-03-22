@@ -165,3 +165,11 @@ Symbol table '.symtab' contains 9 entries:
 
 No version information found in this file.
 ```
+
+Generate dependency graphs with CMake:
+
+```shell
+cmake --graphviz=build/dependencies.dot -S . -B build
+dot -Tpng build/dependencies.dot -o build/dependencies.png
+```
+
