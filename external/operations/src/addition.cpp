@@ -1,4 +1,3 @@
-
 namespace operations {
 
 int add(int a, int b) {
