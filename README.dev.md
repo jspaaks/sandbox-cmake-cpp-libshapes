@@ -173,3 +173,15 @@ cmake --graphviz=build/dependencies.dot -S . -B build
 dot -Tpng build/dependencies.dot -o build/dependencies.png
 ```
 
+## Other resources
+
+## Best practices
+
+- _Canonical Project Structure_ http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1204r0.html
+- _The Pitchfork Layout (PFL)_ https://api.csswg.org/bikeshed/?force=1&url=https://raw.githubusercontent.com/vector-of-bool/pitchfork/develop/data/spec.bs#src.header-placement.merged
+
+### Videos
+
+- _Effective CMake_ - Daniel Pfeifer - C++Now 2017 https://www.youtube.com/watch?v=bsXLMQ6WgIk
+- _Using Modern CMake Patterns to Enforce a Good Modular Design_ - Mathieu Ropert - CppCon 2017 https://www.youtube.com/watch?v=eC9-iRN2b04
+- _Deep CMake for Library Authors_ - Craig Scott - CppCon 2019 https://www.youtube.com/watch?v=m0DwB4OvDXk
