@@ -6,7 +6,6 @@ int main(int argc, char **argv) {
   return RUN_ALL_TESTS();
 }
 
-
 TEST(CircleTests, calcAreaWithPositiveRadius) {
     shapes::Circle circle(2.0);
     double actual_area = circle.calcArea();
