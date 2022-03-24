@@ -1,11 +1,8 @@
-cmake_minimum_required (VERSION 3.10)
+cmake_minimum_required (VERSION 3.14)
 project (shapes LANGUAGES CXX)
-#add_library(shapes SHARED src/circle.cpp)
-
-
 include(cmake/googletest.cmake)
-
-add_executable(circletest src/circle.test.cpp)
-
 enable_testing()
-add_test(NAME circletest COMMAND circletest)
+add_executable(circletest src/circle.test.cpp)
+target_link_libraries(circletest gtest_main)
+include(GoogleTest)
+gtest_discover_tests(circletest)

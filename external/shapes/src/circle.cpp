@@ -1,12 +1,13 @@
 #include "circle.hpp"
+#include <math.h>
 
 
 Circle::Circle(double radius)
-    : radius_(radius)
+    : radius(radius)
 {
 };
 
 
 double Circle::calcArea(void) {
-    return 3.14 * radius_ * radius_;
+    return M_PI * std::pow(radius, 2);
 }
