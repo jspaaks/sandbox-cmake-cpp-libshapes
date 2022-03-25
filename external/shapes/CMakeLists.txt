@@ -4,11 +4,36 @@ include(cmake/googletest.cmake)
 enable_testing()
 include(GoogleTest)
 
-add_executable(CircleTests src/round/circle.test.cpp)
-target_link_libraries(CircleTests gtest_main)
+# ------------------------------ Circle ------------------------------ #
+
+add_executable(
+    CircleTests
+    shapes/round/circle.test.cpp
+)
+target_include_directories(
+    CircleTests
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+target_link_libraries(
+    CircleTests
+    gtest_main
+)
 gtest_discover_tests(CircleTests)
 
-add_executable(RectangleTests src/pointy/rectangle.test.cpp)
-target_link_libraries(RectangleTests gtest_main)
-gtest_discover_tests(RectangleTests)
+# ----------------------------- Rectangle ---------------------------- #
 
+add_executable(
+    RectangleTests
+    shapes/pointy/rectangle.test.cpp
+)
+target_include_directories(
+    RectangleTests
+    PUBLIC
+    ${CMAKE_CURRENT_SOURCE_DIR}
+)
+target_link_libraries(
+    RectangleTests
+    gtest_main
+)
+gtest_discover_tests(RectangleTests)

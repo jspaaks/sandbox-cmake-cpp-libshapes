@@ -1,7 +1,7 @@
 #ifndef SHAPES_RECTANGLE_H
 #define SHAPES_RECTANGLE_H
 
-#include "../abstract/shape.hpp"
+#include <shapes/abstract/shape.hpp>
 
 namespace shapes {
 
