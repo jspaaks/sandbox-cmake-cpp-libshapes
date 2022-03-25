@@ -1,11 +1,17 @@
 cmake_minimum_required (VERSION 3.14)
-project (main LANGUAGES CXX)
-add_subdirectory (external/liboperations/)
-add_subdirectory (external/libshapes/)
-add_executable (myprogram main.cpp)
+project (shapes LANGUAGES CXX)
+
+# Not specifying library type SHARED|STATIC is deliberate
+add_library(
+    libshapes
+    libshapes/pointy/rectangle.cpp
+    libshapes/round/circle.cpp
+)
+
 target_include_directories(
-    myprogram
+    libshapes
     PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
-target_link_libraries (myprogram PUBLIC liboperations libshapes)
+
+include(cmake/testing.cmake)

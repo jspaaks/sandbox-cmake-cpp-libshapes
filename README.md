@@ -1,8 +1,8 @@
-# cmake-sandbox
+Library for testing some patterns about inheritance, classes, abstract base classes, and packaging
 
-Repository for trying some patterns for building C++ libraries with CMake.
-
-- liboperations: checked into version control
-- libshapes: submodule
-- libanimals: fetch content
-- ?: locally installed
+```
+mkdir build && cd build
+cmake ..
+cmake --build .
+ctest
+```
