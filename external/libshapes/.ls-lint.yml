@@ -1,0 +1,15 @@
+ls:
+  .dir: lowercase
+
+  .cpp: snake_case
+  .hpp: snake_case
+  .test.cpp: snake_case
+  .test.hpp: snake_case
+
+  cmake:
+    .cmake: lowercase
+
+ignore:
+  - .git
+  - build
+  - _build
