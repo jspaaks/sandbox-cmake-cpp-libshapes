@@ -1,0 +1,17 @@
+authors:
+  - family-names: Spaaks
+    given-names: Jurriaan H.
+    affiliation: Netherlands eScience Center
+    orcid: https://orcid.org/0000-0002-7064-4069
+cff-version: 1.2.0
+message: If you use this software, please cite it using the metadata from this file.
+title: libshapes
+references:
+  - authors:
+      - family-names: Kolpackov
+        given-names: Boris
+        email: boris@codesynthesis.com
+    title: Canonical Project Structure
+    type: website
+    date-published: 2018-10-08
+    url: http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1204r0.html
