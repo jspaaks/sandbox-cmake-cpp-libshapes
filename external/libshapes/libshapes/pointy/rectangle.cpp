@@ -1,4 +1,4 @@
-#include <shapes/pointy/rectangle.hpp>
+#include <libshapes/pointy/rectangle.hpp>
 
 
 namespace shapes {

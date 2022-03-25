@@ -8,7 +8,7 @@ include(GoogleTest)
 
 add_executable(
     CircleTests
-    shapes/round/circle.test.cpp
+    libshapes/round/circle.test.cpp
 )
 target_include_directories(
     CircleTests
@@ -25,7 +25,7 @@ gtest_discover_tests(CircleTests)
 
 add_executable(
     RectangleTests
-    shapes/pointy/rectangle.test.cpp
+    libshapes/pointy/rectangle.test.cpp
 )
 target_include_directories(
     RectangleTests

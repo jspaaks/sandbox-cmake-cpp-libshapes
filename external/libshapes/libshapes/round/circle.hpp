@@ -1,7 +1,7 @@
 #ifndef SHAPES_CIRCLE_H
 #define SHAPES_CIRCLE_H
 
-#include <shapes/abstract/shape.hpp>
+#include <libshapes/abstract/shape.hpp>
 
 namespace shapes {
 

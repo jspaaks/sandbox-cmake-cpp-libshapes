@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include <shapes/pointy/rectangle.cpp>
+#include <libshapes/pointy/rectangle.cpp>
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);
