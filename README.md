@@ -1,8 +1,3 @@
-Library for testing some patterns about inheritance, classes, abstract base classes, and packaging
+# sandbox-cmake-cpp-libshapes
 
-```
-mkdir build && cd build
-cmake ..
-cmake --build .
-ctest
-```
+See parent project: [https://github.com/jspaaks/sandbox-cmake-cpp](https://github.com/jspaaks/sandbox-cmake-cpp)
